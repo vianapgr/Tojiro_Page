@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tojiro Sushi | Culinária Japonesa em Guarulhos</title>
+    
+    <!-- Meta tags de SEO Local -->
+    <meta name="description" content="Tojiro Sushi em Guarulhos - SP. Uma experiência culinária japonesa autêntica e sofisticada na Av. Dr. Timóteo Penteado. Sushis, sashimis e pratos especiais.">
+    <meta name="keywords" content="restaurante japones guarulhos, sushi guarulhos, tojiro sushi, culinaria japonesa, timoteo penteado">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts Google & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-kanji">東</span> TOJIRO <span class="highlight">SUSHI</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#contato" class="nav-link">Reservas & Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contato" class="btn btn-gold nav-btn">Reservar Mesa</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO INÍCIO (HERO) -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge">Alta Gastronomia Japonesa</span>
+                <h1>Uma experiência japonesa em cada detalhe</h1>
+                <p>Tradição, ingredientes selecionados e sofisticação no coração de Guarulhos.</p>
+                <div class="hero-buttons">
+                    <a href="#cardapio" class="btn btn-gold">Conhecer o Cardápio</a>
+                    <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section class="about section-padding" id="sobre">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-subtitle">Tradição & Elegância</span>
+                        <h2 class="section-title">Sobre o Tojiro Sushi</h2>
+                        <div class="gold-line"></div>
+                        <p>O Tojiro Sushi nasceu com a missão de proporcionar uma autêntica viagem gastronômica pela culinária japonesa moderna. Localizado em uma das principais avenidas de Guarulhos, nosso ambiente combina sofisticação contemporânea com a essência acolhedora da hospitalidade oriental.</p>
+                        <p>Cada corte de peixe, cada preparo do arroz e a apresentação de cada prato refletem o rigor e a dedicação dos nossos chefs aos ingredientes da mais alta qualidade.</p>
+                    </div>
+                    <div class="about-gallery">
+                        <div class="gallery-item large">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=800&auto=format&fit=crop" alt="Prato de sushi elaborado" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?q=80&w=500&auto=format&fit=crop" alt="Sashimi de salmão fresco" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=500&auto=format&fit=crop" alt="Ambiente do restaurante" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CARDÁPIO -->
+        <section class="menu section-padding" id="cardapio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Seleção Especial</span>
+                    <h2 class="section-title">Nosso Cardápio</h2>
+                    <div class="gold-line center"></div>
+                    <p class="menu-disclaimer">* Valores e pratos demonstrativos abaixo. Sujeitos à alteração após envio do cardápio oficial.</p>
+                </div>
+
+                <!-- Categorias -->
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="todos">Todos</button>
+                    <button class="tab-btn" data-category="sushis">Sushis</button>
+                    <button class="tab-btn" data-category="sashimis">Sashimis</button>
+                    <button class="tab-btn" data-category="temakis">Temakis</button>
+                    <button class="tab-btn" data-category="combinados">Combinados</button>
+                    <button class="tab-btn" data-category="quentes">Pratos Quentes</button>
+                </div>
+
+                <!-- Lista de Itens -->
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card" data-category="sushis">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=600&auto=format&fit=crop" alt="Nigiri de Salmão Trufado" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Nigiri Salmão Trufado (4 unid.)</h3>
+                                <span class="price">R$ 38,00</span>
+                            </div>
+                            <p class="description">Lâminas de salmão maçaricado com azeite de trufas brancas, flor de sal e raspas de limão siciliano.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="menu-card" data-category="sashimis">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=600&auto=format&fit=crop" alt="Sashimi de Atum Especial" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Sashimi Atum Selado (8 unid.)</h3>
+                                <span class="price">R$ 52,00</span>
+                            </div>
+                            <p class="description">Fatias de atum fresco selado na crosta de gergelim com molho ponzu artesanal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="menu-card" data-category="temakis">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?q=80&w=600&auto=format&fit=crop" alt="Temaki Ebi Especial" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Temaki Salmão & Camarão</h3>
+                                <span class="price">R$ 44,00</span>
+                            </div>
+                            <p class="description">Cone de alga crocante recheado com salmão batido, camarão empanado, cream cheese e cebolinha.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="menu-card" data-category="combinados">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=600&auto=format&fit=crop" alt="Combinado Tojiro Omakase" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Combinado Tojiro Omakase (32 pcs)</h3>
+                                <span class="price">R$ 168,00</span>
+                            </div>
+                            <p class="description">Seleção exclusiva do chef contendo sushis especiais, sashimis variados e djos autorais.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="menu-card" data-category="quentes">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600&auto=format&fit=crop" alt="Shoyu Ramen" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Shoyu Ramen Tradicional</h3>
+                                <span class="price">R$ 49,00</span>
+                            </div>
+                            <p class="description">Caldo artesanal encorpado, massa fresca, chashu (lombo suíno), ovo ajitama, menma e nori.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="menu-card" data-category="quentes">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=600&auto=format&fit=crop" alt="Yakissoba Misto" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h3>Yakissoba Misto Premium</h3>
+                                <span class="price">R$ 46,00</span>
+                            </div>
+                            <p class="description">Macarrão salteado com tiras de filé mignon, frango, legumes frescos e molho oriental caseiro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO RESERVAS E CONTATO -->
+        <section class="contact section-padding" id="contato">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Faça sua Visita</span>
+                        <h2 class="section-title">Reservas & Localização</h2>
+                        <div class="gold-line"></div>
+                        <p>Entre em contato para reservar sua mesa ou esclarecer dúvidas. Será um prazer receber você.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Telefone & WhatsApp</h4>
+                                    <p>(11) 2087-0785</p>
+                                    <a href="tel:1120870785" class="btn-link">Ligar Agora</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p>@tojirosushiguarulhos</p>
+                                    <a href="https://www.instagram.com/tojirosushiguarulhos/" target="_blank" rel="noopener noreferrer" class="btn-link">Ver Perfil</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Endereço</h4>
+                                    <p>Av. Doutor Timóteo Penteado, 695<br>Vila Hulda - Guarulhos - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.617876879893!2d-46.53676642376241!3d-23.456209857723907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef531adbf6f97%3A0xb30441c2c31e7d0d!2sAv.%20Dr.%20Tim%C3%B3teo%20Penteado%2C%20695%20-%20Vila%20Hulda%2C%20Guarulhos%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-kanji">東</span> TOJIRO <span class="highlight">SUSHI</span>
+                </a>
+                <p>Sofisticação e autenticidade em gastronomia japonesa na cidade de Guarulhos.</p>
+            </div>
+
+            <div class="footer-info">
+                <h4>Horário de Funcionamento</h4>
+                <ul>
+                    <li><span>Terça a Sexta:</span> 18h00 às 23h00</li>
+                    <li><span>Sábado e Domingo:</span> 12h00 às 23h30</li>
+                    <li><span>Segunda-feira:</span> Fechado</li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato Rápido</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Dr. Timóteo Penteado, 695 - Guarulhos/SP</p>
+                <p><i class="fa-solid fa-phone"></i> (11) 2087-0785</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/tojirosushiguarulhos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Tojiro Sushi. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
